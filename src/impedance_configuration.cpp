@@ -100,7 +100,7 @@ int main(int argc, char **argv)
 
 	impedance_configuration::ImpedanceConfiguration impedance_setter(&node_handle, "manipulator", "world");
 
-	impedance_setter.moveToInitialJointPositions();
+	//impedance_setter.moveToInitialJointPositions();
 	impedance_setter.waitForApproval();
 	ROS_INFO_NAMED("impedance_configuration", "hi");
 	impedance_setter.setJointImpedanceMode(joint_stiffness1, joint_damping1);
